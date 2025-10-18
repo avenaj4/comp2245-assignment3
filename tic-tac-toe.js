@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     square.classList.add("square");
 
     square.addEventListener("mouseenter", function() {
-      if (!gameOver) square.classList.add("hover");
+      if (!gameOver && !gameState[index]) square.classList.add("hover");
     });
 
     square.addEventListener("mouseleave", function() {
@@ -62,3 +62,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
